@@ -3,7 +3,7 @@
 <html lang="en" ng-app="counterApp">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Counter</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
@@ -19,6 +19,6 @@
   <script src="app.js"></script>
 </head>
 <body ng-controller="CounterController as vm">
-  <button ng-click="vm.addToCounter()">{{vm.counter[0].counter}}</button>
+  <button ng-click="vm.addToCounter()"> {{vm.counter[0].counter}} </button>
 </body>
 </html>
