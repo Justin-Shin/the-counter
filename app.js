@@ -7,9 +7,10 @@ angular
 
   function CounterControllerFunction($firebaseArray){
     let ref = firebase.database().ref().child("counter");
-    this.counter = $firebaseArray(ref);
+    this.counter = $firebaseArray(ref)
     this.addToCounter = function(){
       let x = this.counter[0]
+      console.log(`controller func ${x.counter}`)
       x.counter++
       this.counter.$save(x)
     }
@@ -23,7 +24,3 @@ angular
 //     console.log(13)
 //   })
 //
-function checkFontSize(){
-  length = $('button').html().length - 2
-  $("button").css("font-size",`calc((50vw * .42)/ ${length-3})`);
-}
