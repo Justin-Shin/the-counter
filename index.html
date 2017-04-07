@@ -1,0 +1,24 @@
+<!-- index.html -->
+
+<html lang="en" ng-app="counterApp">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Counter</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBOCi8pgNcprf9Du290LyJYj1C1p67UAIQ",
+      databaseURL: "https://counter-86790.firebaseio.com",
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="CounterController as vm">
+  <button ng-click="vm.addToCounter()">{{vm.counter[0].counter}}</button>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  background-color: red;
+  height: 50vh;
+  width: 50vw;
+  font-size: 40vh;
+  color: white;
+}
