@@ -14,3 +14,16 @@ angular
       this.counter.$save(x)
     }
   }
+
+//   function checkFontSize() {
+//     console.log(123);
+//   }
+// $(document).ready(function() {
+//   $(' #buton ').on("change", function() {
+//     console.log(13)
+//   })
+//
+function checkFontSize(){
+  length = $('button').html().length - 2
+  $("button").css("font-size",`calc((50vw * .42)/ ${length-3})`);
+}
